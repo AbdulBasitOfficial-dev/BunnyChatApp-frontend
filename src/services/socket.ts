@@ -18,7 +18,7 @@ class SocketService {
         }
 
         // Connect to backend WebSocket server
-        this.socket = io('http://localhost:3000', {
+        this.socket = io('https://buunychatapp-backend-production.up.railway.app', {
             auth: { token },
             transports: ['websocket', 'polling'],
             reconnection: true,
